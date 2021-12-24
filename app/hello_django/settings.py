@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "shjdfliahweroq89q37492u@#$%!?$52kjhsh
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
 ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 
 # Application definition
