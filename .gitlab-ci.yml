@@ -31,7 +31,7 @@ test:
     expire_in: 5 days
 
 prod:
-  stage: prod
+  stage: test
   image: tiangolo/docker-with-compose
   script:
     #- docker-compose -f test.yml build
