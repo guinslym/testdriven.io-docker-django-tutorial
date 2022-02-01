@@ -10,6 +10,7 @@ variables:
 
 stages:
   - test
+  - prod
 
 test:
   stage: test
@@ -31,7 +32,7 @@ test:
     expire_in: 5 days
 
 prod:
-  stage: test
+  stage: prod
   image: tiangolo/docker-with-compose
   script:
     #- docker-compose -f test.yml build
